@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #f9fafb;
+    background-color: #F9FAFB;
 }
 
 img {
@@ -302,4 +302,64 @@ img {
     font-weight: 600;
     line-height: 20px;
     color: #00a63e;
+}
+
+.dashboard {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.dashboard .dashboard-activity {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    border: 1px solid #E7E9EC;
+}
+
+.dashboard .dashboard-activity h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #101828;
+}
+
+
+.dashboard .dashboard-activity .dashboard-activity-card {
+    background-color: #EFF6FF;
+    border-left: 4.5px solid #1447e6;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.dashboard .dashboard-activity .dashboard-activity-card .card1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dashboard .dashboard-activity .dashboard-activity-card .card1 h5 {
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #101828;
+}
+
+.dashboard .dashboard-activity .dashboard-activity-card .card1 span {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #155dfc;
+}
+
+.dashboard .dashboard-activity .dashboard-activity-card p,
+span {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #4a5565;
+    margin-top: 8px;
 }
