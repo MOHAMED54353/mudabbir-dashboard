@@ -326,6 +326,20 @@ img {
     color: #101828;
 }
 
+.dashboard .dashboard-activity>p {
+    border-top: 1px solid #E7E9EC;
+    /* width: 80%; */
+    margin-top: 20px;
+    padding-top: 25px;
+    text-align: center;
+}
+
+.dashboard .dashboard-activity p {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #1447e6;
+}
 
 .dashboard .dashboard-activity .dashboard-activity-card {
     background-color: #EFF6FF;
@@ -335,10 +349,20 @@ img {
     margin-top: 20px;
 }
 
+.dashboard .dashboard-activity .dashboard-activity-card.green {
+    background-color: #F0FDF4;
+    border-left: 4.5px solid #00C950;
+}
+
+.dashboard .dashboard-activity .dashboard-activity-card.green .card1 span {
+    color: #00C950;
+}
+
 .dashboard .dashboard-activity .dashboard-activity-card .card1 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    min-width: 200px;
 }
 
 .dashboard .dashboard-activity .dashboard-activity-card .card1 h5 {
@@ -361,5 +385,142 @@ span {
     font-weight: 600;
     line-height: 16px;
     color: #4a5565;
-    margin-top: 8px;
+    margin-top: 10px;
+}
+
+/* Monthly Bills */
+.monthly-bills {
+    padding: 24px 32px;
+    background-color: #fff;
+    border: 1px solid #E7E9EC;
+    border-radius: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+/* Header */
+.bills-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bills-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+    color: #101828;
+}
+
+.bills-header a {
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color: #101828;
+}
+
+.bills-total {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.bills-total h2 {
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 36px;
+    color: #101828;
+}
+
+.bills-total p {
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 20px;
+    color: #6a7282;
+}
+
+.bills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.bill-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 18px 10px;
+    background-color: #F9FAFB;
+    border: 1px solid #F0F1F3;
+    border-radius: 18px;
+    text-align: center;
+    gap: 5px;
+}
+
+.bill-icon {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 12px;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.internet {
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.electricity {
+    background-color: #FEF9C3;
+    color: #D58B00;
+}
+
+.netflix {
+    background-color: #FFE4E6;
+    color: #FF0000;
+}
+
+.phone {
+    background-color: #DCFCE7;
+    color: #00A63E;
+}
+
+.bill-card h5 {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #6a7282;
+}
+
+.bill-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    color: #101828;
+}
+
+.bill-card p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #333;
+}
+
+.bill-card .urgent {
+    color: #FF0000;
+}
+
+.bill-card .warning {
+    color: #F54900;
+}
+
+.bill-card .safe {
+    color: #00C950;
+}
+
+.bill-card p {
+    color: #6a7282;
 }
