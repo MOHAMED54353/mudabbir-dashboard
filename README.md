@@ -47,18 +47,11 @@ assignment-4-mudabbir/
 | `991px` and below | Navbar wraps, statistics and summary become one column |
 | `767px` and below | Sidebar is hidden |
 
-##  Getting Started
-
-1. Clone or download the repository.
-2. Open the `assignment-4-mudabbir` folder in VS Code.
-3. Right-click `index.html` and choose **Open with Live Server**.
-
-You can also open `index.html` directly in the browser. An internet connection is needed to load the icons and fonts.
 
 ##  Notes
 
 This is a static UI: all figures and transactions are sample data, and the buttons and links are not functional yet.
 
-## 👤 Author
+##  Author
 
-**MEDO**, Frontend Developer
+**Muhammed Elsayed**, Frontend Developer
