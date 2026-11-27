@@ -30,10 +30,11 @@ No JavaScript, frameworks, or build tools.
 assignment-4-mudabbir/
 ├── css/
 │   └── style.css        # Entry point, imports the files below
-├── imgs/                # Avatar images
-├── header.css           # Base styles, sidebar, navbar, statistics
-├── transaction.css      # Activity, monthly bills, transactions table
-├── summary.css          # Budget, chart, accounts, payment cards
+    ___ header.css           # Base styles, sidebar, navbar, statistics
+    ___ transaction.css      # Activity, monthly bills, transactions table
+├   ___ summary.css          # Budget, chart, accounts, payment cards
+
+├── imgs/                # Avatar & user images
 ├── index.html
 └── README.md
 ```
