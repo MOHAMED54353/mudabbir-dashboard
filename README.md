@@ -1,4 +1,4 @@
-# مدبّر | Mudabbir 💰
+# مدبّر | Mudabbir 
 
 > **إدارة أموالك بذكاء** (Manage your money smartly)
 
