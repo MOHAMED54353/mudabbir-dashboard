@@ -1,8 +1,6 @@
 # مدبّر | Mudabbir 
 
-> **إدارة أموالك بذكاء** (Manage your money smartly)
-
-A responsive Arabic (RTL) personal finance dashboard, built with pure **HTML5** and **CSS3**.
+> **إدارة أموالك بذكاء**
 
 ##  Features
 
