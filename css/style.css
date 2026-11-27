@@ -322,7 +322,6 @@ img {
     color: #00a63e;
 }
 
-/* Dashboard */
 .dashboard {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -752,9 +751,511 @@ img {
     color: #00C950;
 }
 
+.summary {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 18px;
+    margin-top: 18px;
+    align-items: start;
+}
+
+.summary-card {
+    background-color: white;
+    padding: 24px;
+    border: 1px solid #E5E7EB;
+    border-radius: 16px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.summary-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.summary-header h4 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #101828;
+}
+
+.summary-header a {
+    text-decoration: none;
+    font-size: 14px;
+    color: #4A5565;
+}
+
+.summary-header a i {
+    font-size: 12px;
+}
+
+.budget-total {
+    background-color: #EFF6FF;
+    border: 1px solid #DBEAFE;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.budget-total p {
+    font-size: 14px;
+    color: #155DFC;
+}
+
+.budget-total h3 {
+    font-size: 24px;
+    color: #1C398E;
+}
+
+.budget-remaining {
+    text-align: left;
+}
+
+.budget-remaining p {
+    color: #6a7282;
+}
+
+.budget-remaining h5 {
+    font-size: 16px;
+    color: #00A63E;
+}
+
+.budget-used {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4A5565;
+}
+
+.progress {
+    width: 100%;
+    height: 8px;
+    background-color: #E5E7EB;
+    border-radius: 10px;
+    margin-top: 8px;
+}
+
+.progress-bar {
+    height: 8px;
+    background-color: #155DFC;
+    border-radius: 10px;
+}
+
+.budget-card {
+    background-color: #F9FAFB;
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    padding: 16px;
+    margin-top: 16px;
+}
+
+.budget-info {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.budget-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.budget-info h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #101828;
+}
+
+.budget-info p {
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 16px;
+    color: #6a7282;
+}
+
+.budget-amount {
+    text-align: left;
+}
+
+.budget-amount h5 {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: #101828;
+}
+
+.budget-badge {
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 20px;
+}
+
+.budget-card.orange .budget-icon {
+    background-color: #FFEDD4;
+    color: #F54900;
+}
+
+.budget-card.orange .budget-badge {
+    background-color: #DCFCE7;
+    color: #016630;
+}
+
+.budget-card.orange .progress-bar {
+    background-color: #FF6900;
+}
+
+.budget-card.red .budget-icon {
+    background-color: #FFE2E2;
+    color: #E7000B;
+}
+
+.budget-card.red .budget-badge {
+    background-color: #FFE2E2;
+    color: #9F0712;
+}
+
+.budget-card.red .progress-bar {
+    background-color: #FB2C36;
+}
+
+.budget-card.pink .budget-icon {
+    background-color: #FCE7F3;
+    color: #E60076;
+}
+
+.budget-card.pink .budget-badge {
+    background-color: #FEF9C2;
+    color: #894B00;
+}
+
+.budget-card.pink .progress-bar {
+    background-color: #F6339A;
+}
+
+.budget-card.green .budget-badge {
+    background-color: #DCFCE7;
+    color: #166534;
+}
+
+.budget-card.green .budget-icon {
+    background-color: #DCFCE7;
+    color: #00C950;
+}
+
+.budget-card.green .progress-bar {
+    background-color: #00C950;
+}
+
+.income-expenses {
+    margin-bottom: 20px;
+}
+
+.chart-legend {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    font-size: 12px;
+    color: #4A5565;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.legend-color {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+}
+
+.legend-color.income {
+    background-color: #10B981;
+}
+
+.legend-color.expense {
+    background-color: #EF4444;
+}
+
+.chart {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: 180px;
+    margin-top: 16px;
+}
+
+.chart-week {
+    text-align: center;
+}
+
+.chart-week span {
+    font-size: 12px;
+    color: #6a7282;
+}
+
+.chart-bars {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.bar {
+    width: 15px;
+    border-radius: 4px 4px 0 0;
+}
+
+.bar.income {
+    background-color: #10B981;
+}
+
+.bar.expense {
+    background-color: #EF4444;
+}
+
+.account-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    background-color: #F9FAFB;
+    border: 1px solid #F3F4F6;
+    border-radius: 12px;
+    padding: 14px;
+    margin-top: 12px;
+}
+
+.account-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.account-icon {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    border-radius: 10px;
+}
+
+.account-info h5 {
+    font-size: 14px;
+    font-weight: 500;
+    color: #101828;
+}
+
+.account-info p {
+    font-size: 12px;
+    color: #6a7282;
+}
+
+.account-amount {
+    font-size: 14px;
+    color: #101828;
+    white-space: nowrap;
+}
+
+.account-amount.negative {
+    color: #E7000B;
+}
+
+.account-card.blue .account-icon {
+    background-color: #DBEAFE;
+    color: #155DFC;
+}
+
+.account-card.green .account-icon {
+    background-color: #DCFCE7;
+    color: #00A63E;
+}
+
+.account-card.purple .account-icon {
+    background-color: #F3E8FF;
+    color: #9810FA;
+}
+
+.bank-card {
+    position: relative;
+    color: white;
+    padding: 36px 24px 24px;
+    border-radius: 12px;
+    margin-top: 16px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.bank-card.visa {
+    background-color: #372AAC;
+}
+
+.bank-card.mastercard {
+    background-color: #C70036;
+}
+
+.bank-card.paypal {
+    background-color: #193CB8;
+}
+
+.bank-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-logo {
+    font-size: 36px;
+}
+
+.card-chip {
+    width: 44px;
+    height: 30px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 6px;
+}
+
+.card-number {
+    font-size: 20px;
+    letter-spacing: 2px;
+    text-align: right;
+    margin: 24px 0 16px;
+}
+
+.bank-card h5 {
+    font-size: 18px;
+    margin: 24px 0 16px;
+}
+
+.bank-card-bottom {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.bank-card-bottom span {
+    font-size: 12px;
+    opacity: 0.8;
+}
+
+.bank-card-bottom p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.bank-card-bottom .verified {
+    color: #05DF72;
+}
+
+
+.flip-card {
+    margin-top: 16px;
+}
+
+.flip-card-inner {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.6s;
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card .bank-card {
+    margin-top: 0;
+}
+
+.flip-front,
+.flip-back {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+}
+
+.flip-back {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    padding: 16px;
+    background-color: #0B1222;
+    color: white;
+    border-radius: 12px;
+    transform: rotateY(180deg);
+}
+
+.black-line {
+    height: 36px;
+    background-color: black;
+    border-radius: 4px;
+}
+
+.sign-text {
+    font-size: 10px;
+    color: #99A1AF;
+    margin: 8px 0;
+}
+
+.sign-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    height: 30px;
+    padding: 0 12px;
+    background-color: #F3F4F6;
+    border-radius: 6px;
+    color: #101828;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.sign-line {
+    flex: 1;
+    height: 12px;
+    background-color: #D1D5DC;
+    border-radius: 2px;
+}
+
+.cvv {
+    width: fit-content;
+    margin-top: 8px;
+    margin-right: auto;
+    text-align: center;
+}
+
+.cvv p {
+    font-size: 11px;
+    font-weight: 600;
+}
+
+.cvv span {
+    display: block;
+    padding: 4px 14px;
+    background-color: white;
+    color: #101828;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+
 @media (max-width: 1239px) {
     .dashboard {
         grid-template-columns: 1fr;
+    }
+
+    .summary {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -768,6 +1269,10 @@ img {
     .statistics .container {
         grid-template-columns: 1fr;
         gap: 16px;
+    }
+
+    .summary {
+        grid-template-columns: 1fr;
     }
 }
 
